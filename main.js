@@ -65,6 +65,7 @@ class BlockChain{
 
         // the mining reward is added to pending transactions array. It will be sent to you,
         //  only when you mine the next mining block.
+        // So reward for mining each block will be in next block mined
         let block = new Block(Date.now(),this.pendingTransactions);
         block.mineBlock(this.difficulty);
         console.log('Block successfully mined');
